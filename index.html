@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <!--<p>Player 1: Cris</p>-->
+    <button>Click me</button>
+
+    <script>
+        /*const para = document.querySelector("p");
+
+        para.addEventListener("click", updateName);
+
+        function updateName() {
+            let name = prompt("Ingresa un nuevo nombre");
+            para.textContent = "Player 1: " + name;
+            alert("Holo soy una alerta")
+        }*/
+
+
+
+        function createParagraph() {
+            var para = document.createElement("h1");
+            para.textContent = "You clicked the button";
+            document.body.appendChild(para);
+        }
+
+        var buttons = document.querySelectorAll("button");
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", createParagraph)
+        }
+    </script>
+</body>
+</html>
