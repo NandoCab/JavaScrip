@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Juego: Adivina el numero</h1>
+    <p>Tienes que seleccionar un numero entre 1 y 100. Tienes hasta 10 intentos para adivinarlo. Te dire si estas arriba o abajo.</p>
+
+    <div class="form">
+        <label for="guessField">Ingresa un numero</label>
+        <input type="text" id="guessField">
+        <input type="submit" value="Ingresa la respuesta" class="guesssubmit">
+    </div>
+
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lourOrHi"></p>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
