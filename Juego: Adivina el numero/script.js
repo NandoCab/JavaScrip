@@ -1,4 +1,4 @@
-let randomNumber = Math.floor(Math.random() * 100) +1;
+/*let randomNumber = Math.floor(Math.random() * 100) +1;
 
 const guesses = document.querySelector(".guesses");
 const lastResult = document.querySelector(".lastResult");
@@ -7,10 +7,10 @@ const guessField = document.querySelector("#guessField");
 const guesssubmit = document.querySelector(".guesssubmit");
 
 let guessCount = 1;
-let resetButon;
+let resetButon;*/
 
-function checkGuess() {
-    /*alert("Soy un marcador de posicion")*/
+/*function checkGuess() {
+    //alert("Soy un marcador de posicion")
 
     console.log("randomNumber: ", randomNumber)
 
@@ -70,4 +70,20 @@ function resetGame() {
     guessField.focus();
     lastResult.style.backgroundColor = "white";
     randomNumber = Math.floor(Math.random * 100) + 1;
+}*/
+
+const button = document.querySelector("button");
+
+const car = 16;
+
+button.onclick = function() {
+    var name = prompt("¿Cual es tu nombre?");
+    alert("Hola " + name + ", me alegro de verte");
+    console.log(name);
+    //car = name;
+    three();
+}
+
+function three () {
+    console.log("Estamos aqui: ", name)
 }
